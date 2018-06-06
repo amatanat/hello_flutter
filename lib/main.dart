@@ -8,6 +8,27 @@ Widget helloFlutter(){
   );
 }
 
+// StatelessWidget class
+class HelloFlutter extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Container(
+        color: Colors.green,
+        height: 400.0,
+        width: 300.0,
+        child:Center(
+            child: Text(
+                'Hello Flutter',
+                style: TextStyle(fontSize: 40.0),
+
+            )
+        )
+      ),
+    );
+  }
+}
+
 void main() {
   // UI of an app
   runApp(
@@ -22,8 +43,9 @@ void main() {
         appBar: AppBar(
           title: Text('Hello Flutter'),
         ),
-        body: helloFlutter()
+        body: HelloFlutter()
       )
     )
   );
 }
+
